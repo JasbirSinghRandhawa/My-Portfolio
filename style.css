@@ -84,7 +84,7 @@ nav ul li a:hover::after {
   flex-basis: 60%;
 }
 .col-2 h1 {
-  font-size: 60px;
+  /* font-size: 60px; */
   font-weight: bolder;
   color: #fff;
 }
@@ -355,4 +355,79 @@ form .btn2 {
   background:transparent;
   transform: translatey(-8px);
   
+}
+nav .fas{
+  opacity: 0;
+}
+/* ---------------responsive---------------- */
+@media only screen and (max-width :600px)
+{
+#header {
+     background-image: url("images/mobile2.png");
+}
+.headertext{
+  margin-top: 30%;
+  font-size: 16px;
+  
+  
+}
+.headertext h1{
+  font-size: 30px;
+  margin-top: 10px;
+ -webkit-text-stroke: #ff0000;
+}
+nav .fas{
+  opacity: 1;
+  display: block;
+  font-size: 25px;
+
+}
+nav ul{
+  background:#ff004f;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100%;
+  padding-top: 50px;
+
+  flex-direction: column;
+z-index: 2;
+transition: right 0.5s;
+
+} 
+nav ul li{
+  display: block;
+  margin: 25px;
+}
+nav ul .fas{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+#menu{
+  margin-top:-25px;
+  cursor: pointer;
+}
+.sub-title {
+  font-size: 30px;
+
+}
+.col-1, .col-2{ 
+  flex-basis: 100%;
+}
+.col-1{
+  margin-bottom: 30px;
+}
+.col-2{
+  font-size: 14px;
+}
+.leftcontact,.rightcontact{
+  flex-basis: 100%;
+}
+.video iframe{
+  width: 100%;
+}
+
 }
